@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+body
+        {
+
+  background-image: url("backg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+        }
+h1
+{
+    color: goldenrod;
+}
+#mssg
+{
+font-style: italic}
+button
+{
+    background-color: goldenrod;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #1e7246;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: none;
+    width: 150px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+<h1>Blackjack</h1>
+<p id="mssg">want to play around ?</p>
+<p id ="cards">Cards:</p>
+<p id = "sum">Sum:</p>
+<button onclick="startgame()">START PLAY</button>
+<DIV>
+<button onclick="newCard()">NEW CARD</button>
+</DIV>
+<p id = "player"> masa : 0 $</p>
+<script src="game.js"></script>
+
+</body>
+</html>
