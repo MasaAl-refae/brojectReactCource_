@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+
+            background-image: url("passenger_backg.jpg");
+            background-repeat: no-repeat;
+
+            text-align: center;
+            color: white;
+            font-weight: bold;
+
+
+
+        }
+        h1
+        {
+            margin-top: 10PX;
+            margin-bottom: 10px;
+        }
+        h2
+        {
+            margin-top:  0px;
+            margin-bottom: 20px;
+            font-size: 50px;
+
+        }
+        button
+        {
+            padding-bottom: 10px;
+            padding-top: 10px;
+          color: white;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            border: none;
+            width: 150px;
+            border-radius: 2px;
+            font-weight: bold;
+        }
+#inc_id
+{
+    background-color: firebrick;
+}
+#save_id
+{
+    background-color: #1e7246;
+
+}
+    </style>
+</head>
+<body>
+
+<h1>
+people entered:
+</h1>
+
+<h2 id="inc_el">
+0
+</h2>
+
+<button id="inc_id" onclick="inc()">INCREMENT</button>
+<div>
+<button id="save_id" onclick="sav()">SAVE</button>
+</div>
+<h3 id = "sav_el">Previous entries:  </h3>
+<script>
+    let incel  = document.getElementById("inc_el") ;
+    let save  = document.getElementById("sav_el") ;
+    let counter = 0 ;
+    function  inc ()
+    { counter++ ;
+        incel.innerText = counter ;
+    }
+    function sav ()
+    {
+
+        save.innerText+= " "+ counter+" - ";
+        counter = 0 ;
+        incel.textContent = counter ;
+
+    }
+</script>
+</body>
+</html>
